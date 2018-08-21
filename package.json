@@ -1,6 +1,6 @@
 {
 	"name": "map-age-cleaner",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Cleanup expired items in a Map",
 	"license": "MIT",
 	"repository": "SamVerschueren/map-age-cleaner",
