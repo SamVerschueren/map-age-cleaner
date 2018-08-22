@@ -121,3 +121,7 @@ export default function mapAgeCleaner<K = any, V = Entry>(map: Map<K, V>, proper
 
 	return map;
 }
+
+// Add support for CJS
+module.exports = mapAgeCleaner;
+module.exports.default = mapAgeCleaner;
