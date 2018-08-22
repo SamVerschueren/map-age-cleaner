@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/SamVerschueren/map-age-cleaner.svg?branch=master)](https://travis-ci.org/SamVerschueren/map-age-cleaner) [![codecov](https://codecov.io/gh/SamVerschueren/map-age-cleaner/badge.svg?branch=master)](https://codecov.io/gh/SamVerschueren/map-age-cleaner?branch=master)
 
-> Cleanup expired items in a Map
+> Automatically cleanup expired items in a Map
 
 
 ## Install
@@ -37,7 +37,7 @@ map.has('unicorn');
 
 ## API
 
-### MapAgeCleaner(map, [property])
+### mapAgeCleaner(map, [property])
 
 Returns the `Map` instance.
 
