@@ -69,8 +69,8 @@ export default function mapAgeCleaner<K = any, V = Entry>(map: Map<K, V>, proper
 		};
 
 		try {
-			for (const item of map.entries()) {
-				await setupTimer(item);
+			for (const entry of map) {
+				await setupTimer(entry);
 			}
 		} catch {
 			// Do nothing if an error occurs, this means the timer was cleaned up and we should stop processing
