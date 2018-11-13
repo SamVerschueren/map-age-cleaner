@@ -65,6 +65,12 @@ export default function mapAgeCleaner<K = any, V = Entry>(map: Map<K, V>, proper
 				}
 			}, delay);
 
+			// tslint:disable-next-line:strict-type-predicates
+			if (typeof processingTimer.unref === 'function') {
+				// Don't hold up the process from exiting
+				processingTimer.unref();
+			}
+
 			return processingDeferred.promise;
 		};
 
