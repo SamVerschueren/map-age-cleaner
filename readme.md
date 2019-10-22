@@ -65,3 +65,16 @@ Name of the property which olds the expiry timestamp.
 ## License
 
 MIT © [Sam Verschueren](https://github.com/SamVerschueren)
+
+
+---
+
+<div align="center">
+	<b>
+		<a href="https://tidelift.com/subscription/pkg/npm-map-age-cleaner?utm_source=npm-map-age-cleaner&utm_medium=referral&utm_campaign=enterprise">Get professional support for this package with a Tidelift subscription</a>
+	</b>
+	<br>
+	<sub>
+		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
+	</sub>
+</div>
