@@ -23,7 +23,7 @@ test('auto removal on initial Map', async t => {
 
 	t.true(map.has('unicorn'));
 
-	await delay(600);
+	await delay(605);
 
 	t.false(map.has('unicorn'));
 });
