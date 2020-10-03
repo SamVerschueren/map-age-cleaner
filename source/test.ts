@@ -1,7 +1,7 @@
 /* tslint:disable:await-promise */
 import test from 'ava';
 import delay from 'delay';
-import mapAgeCleaner from '.';
+import mapAgeCleaner = require('.');
 
 interface Context {
 	map: Map<string, {maxAge: number; data: any}>;
