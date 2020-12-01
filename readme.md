@@ -1,6 +1,6 @@
 # map-age-cleaner
 
-[![Build Status](https://travis-ci.org/SamVerschueren/map-age-cleaner.svg?branch=master)](https://travis-ci.org/SamVerschueren/map-age-cleaner) [![codecov](https://codecov.io/gh/SamVerschueren/map-age-cleaner/badge.svg?branch=master)](https://codecov.io/gh/SamVerschueren/map-age-cleaner?branch=master)
+![CI](https://github.com/SamVerschueren/map-age-cleaner/workflows/CI/badge.svg) [![codecov](https://codecov.io/gh/SamVerschueren/map-age-cleaner/badge.svg?branch=master)](https://codecov.io/gh/SamVerschueren/map-age-cleaner?branch=master)
 
 > Automatically cleanup expired items in a Map
 
