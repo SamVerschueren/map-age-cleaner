@@ -1,7 +1,7 @@
 /* tslint:disable:await-promise */
 import test from 'ava';
 import delay from 'delay';
-import mapAgeCleaner from '.';
+import mapAgeCleaner = require('.');
 
 interface Context {
 	map: Map<string, {maxAge: number; data: any}>;
@@ -23,7 +23,7 @@ test('auto removal on initial Map', async t => {
 
 	t.true(map.has('unicorn'));
 
-	await delay(600);
+	await delay(605);
 
 	t.false(map.has('unicorn'));
 });
@@ -39,7 +39,7 @@ test('auto removal', async t => {
 
 	t.true(map.has('unicorn'));
 
-	await delay(600);
+	await delay(605);
 
 	t.false(map.has('unicorn'));
 });

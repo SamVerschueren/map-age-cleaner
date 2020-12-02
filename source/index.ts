@@ -1,4 +1,4 @@
-import pDefer from 'p-defer';
+import pDefer = require('p-defer');
 
 interface Entry {
 	[key: string]: any;
@@ -19,7 +19,7 @@ interface DeferredPromise<T = any, E = any> {
  *
  * @param map - Map instance which should be cleaned up.
  */
-export default function mapAgeCleaner<K = any, V extends MaxAgeEntry = MaxAgeEntry>(map: Map<K, V>);
+function mapAgeCleaner<K = any, V extends MaxAgeEntry = MaxAgeEntry>(map: Map<K, V>);
 
 /**
  * Automatically cleanup the items in the provided `map`.
@@ -27,9 +27,9 @@ export default function mapAgeCleaner<K = any, V extends MaxAgeEntry = MaxAgeEnt
  * @param map - Map instance which should be cleaned up.
  * @param property - Name of the property which olds the expiry timestamp.
  */
-export default function mapAgeCleaner<K = any, V = Entry>(map: Map<K, V>, property: string);
+function mapAgeCleaner<K = any, V = Entry>(map: Map<K, V>, property: string);
 
-export default function mapAgeCleaner<K = any, V = Entry>(map: Map<K, V>, property = 'maxAge') {
+function mapAgeCleaner<K = any, V = Entry>(map: Map<K, V>, property = 'maxAge') {
 	let processingKey: K | undefined;
 	let processingTimer: NodeJS.Timer | undefined;
 	let processingDeferred: DeferredPromise<void> | undefined;
@@ -128,6 +128,4 @@ export default function mapAgeCleaner<K = any, V = Entry>(map: Map<K, V>, proper
 	return map;
 }
 
-// Add support for CJS
-module.exports = mapAgeCleaner;
-module.exports.default = mapAgeCleaner;
+export = mapAgeCleaner;

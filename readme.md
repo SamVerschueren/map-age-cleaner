@@ -15,7 +15,7 @@ $ npm install map-age-cleaner
 ## Usage
 
 ```js
-import mapAgeCleaner from 'map-age-cleaner';
+import mapAgeCleaner = require('map-age-cleaner');
 
 const map = new Map([
 	['unicorn', {data: '🦄', maxAge: Date.now() + 1000}]
